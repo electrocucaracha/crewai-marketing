@@ -1,0 +1,49 @@
+---
+# SPDX-license-identifier: Apache-2.0
+##############################################################################
+# Copyright (c) 2025
+# All rights reserved. This program and the accompanying materials
+# are made available under the terms of the Apache License, Version 2.0
+# which accompanies this distribution, and is available at
+# http://www.apache.org/licenses/LICENSE-2.0
+##############################################################################
+explanation:
+  description: >
+    Translate a vague or ambiguous {idea} into a detailed, structured concept that is easy to understand and accessible to a wider audience. Break down any jargon,
+    simplify the language, and provide clear examples to help clarify the idea for both technical and non-technical individuals.
+
+  expected_output: >
+    Generate a comprehensive explanation of the initially vague idea, clearly outlining its key components, practical examples, and a simplified breakdown.  The explanation
+    should be structured in a way that anyone, regardless of their technical background, can easily follow and understand.
+
+  agent: explainer
+content_creation:
+  description: >
+    Craft a post that communicates the author's expertise in software, offering insights, solutions, or commentary on software trends. The post should encourage engagement
+    by asking thought-provoking questions or offering an opportunity for the audience to share their own experiences and opinions.
+
+  expected_output: >
+    A compelling and engaging post that not only conveys the author's expertise but also encourages comments and sharing. The post should include a CTA inviting the
+    audience to share their thoughts, answer questions, or comment on their own experiences in the software field. The content should be optimized for LinkedIn’s
+    format and best practices to maximize engagement.
+
+  agent: copywriter
+review:
+  description: >
+    Review the post to ensure clarity, accuracy, and proper alignment with the author’s voice and expertise. Ensure the content is engaging and designed to provoke
+    comments and shares. Optimize the post for SEO to improve discoverability on LinkedIn, while maintaining a professional tone.
+
+  expected_output: >
+    A polished, error-free, and SEO-optimized post that is not only informative but also engaging. The post should include a clear CTA that encourages audience participation
+    and sharing. Ensure that the post adheres to brand guidelines and is visually appealing (e.g., formatting, images, and structure).
+
+  agent: editor
+generate_post:
+  description: >
+    Take the finalized post content and ensure it is properly formatted, includes relevant tags and hashtags, and is optimized for maximum engagement. Ensure it is
+    designed to encourage comments, shares, and interactions.
+
+  expected_output: >
+    A short and concise optimized LinkedIn post using Markdown format ready to be published that includes appropriate tags, hashtags, and any relevant links.
+
+  agent: publisher

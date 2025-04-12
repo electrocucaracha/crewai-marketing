@@ -1,0 +1,20 @@
+[project]
+name = "marketing"
+version = "0.1.0"
+description = "App for creating a LinkedIn post for personal brand"
+authors = [{ name = "Victor Morales", email = "electrocucaracha@gmail.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.108.0,<1.0.0",
+    "streamlit>=1.44.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
+
+[tool.isort]
+profile = "black"
