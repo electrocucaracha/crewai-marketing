@@ -9,6 +9,7 @@ laobi
 LinkedIn
 linter
 opensource
+png
 scalable
 scc
 sloc

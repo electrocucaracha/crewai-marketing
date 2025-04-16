@@ -16,3 +16,5 @@
 This application uses the [CrewAI framework](https://www.crewai.com/) to define
 a marketing crew for generating LinkedIn posts from vague ideas. The CrewAI
 framework enables the creation of scalable and efficient workflows for content generation.
+
+![Screenshot](docs/img/screenshot.png)
