@@ -18,9 +18,9 @@ jobs:
     name: Count Lines of Code
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # 4.2.2
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # 6.0.2
       - name: Setup Go
-        uses: actions/setup-go@f111f3307d8850f501ac008e886eec1fd1932a34 # 5.3.0
+        uses: actions/setup-go@4a3601121dd01d1626a1e23e37211e3254c1c06c # 6.4.0
         with:
           go-version: ">=1.20.0"
       - name: Install dependencies
@@ -31,16 +31,16 @@ jobs:
     name: Check documentation external links
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # 4.2.2
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # 6.0.2
       - name: Check broken links
-        uses: gaurav-nelson/github-action-markdown-link-check@636e17b35a5803e014b7272d9e46a8262705416a # 1.0.16
+        uses: tcort/github-action-markdown-link-check@e7c7a18363c842693fadde5d41a3bd3573a7a225 # 1.1.2
   check-super-linter:
     name: Check syntax (super-linter)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # 4.2.2
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # 6.0.2
       - name: Run super-linter validation
-        uses: super-linter/super-linter@4e8a7c2bf106c4c766c816b35ec612638dc9b6b2 # 7.3.0
+        uses: super-linter/super-linter@9e863354e3ff62e0727d37183162c4a88873df41 # 8.6.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LINTER_RULES_PATH: /
